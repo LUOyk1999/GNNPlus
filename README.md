@@ -45,3 +45,16 @@ conda activate tunedgnn
 python main.py --cfg configs/gatedgcn/ppa.yaml --repeat 2 seed 0 
 python main.py --cfg configs/gatedgcn/hiv.yaml --repeat 2 seed 0 
 ```
+
+## Reference
+
+If you find our codes useful, please consider citing our work
+
+```
+@article{luo2025unlocking,
+  title={Unlocking the Potential of Classic GNNs for Graph-level Tasks: Simple Architectures Meet Excellence},
+  author={Luo, Yuankai and Shi, Lei and Wu, Xiao-Ming},
+  journal={arXiv preprint arXiv:2502.09263},
+  year={2025}
+}
+```
