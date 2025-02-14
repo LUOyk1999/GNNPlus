@@ -1,0 +1,49 @@
+out_dir: results
+metric_best: accuracy
+wandb:
+  use: False
+  project: ppa
+dataset:
+  format: OGB
+  name: ogbg-ppa
+  task: graph
+  task_type: classification
+  transductive: False
+  node_encoder: True
+  node_encoder_name: PPANode
+  node_encoder_bn: False
+  edge_encoder: True
+  edge_encoder_name: PPAEdge
+  edge_encoder_bn: False
+train:
+  mode: custom
+  batch_size: 32
+  eval_period: 1
+  ckpt_period: 100
+model:
+  type: custom_gnn
+  loss_fun: cross_entropy
+  edge_decoding: dot
+  graph_pooling: mean
+gnn:
+  head: default
+  layers_mp: 5
+  layer_type: gine
+  layers_pre_mp: 0
+  layers_post_mp: 2
+  dim_inner: 512
+  batchnorm: True
+  act: relu
+  dropout: 0.15
+  agg: mean
+  normalize_adj: False
+  ffn: True
+  residual: False
+optim:
+  clip_grad_norm: True
+  optimizer: adamW
+  weight_decay: 1e-5
+  base_lr: 0.0003
+  max_epoch: 300
+  scheduler: cosine_with_warmup
+  num_warmup_epochs: 10
