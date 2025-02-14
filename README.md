@@ -1,4 +1,6 @@
 # Unlocking the Potential of Classic GNNs for Graph-level Tasks: Simple Architectures Meet Excellence
+[![arXiv](https://img.shields.io/badge/arXiv-2406.08993-b31b1b.svg)](https://arxiv.org/abs/2502.09263)
+
 Based on the GPS codebase: https://github.com/rampasek/GraphGPS
 
 ### Python environment setup with Conda
