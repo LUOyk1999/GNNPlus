@@ -1,0 +1,52 @@
+out_dir: results
+metric_best: f1
+wandb:
+  use: False
+  project: Pascal
+dataset:
+  format: PyG-VOCSuperpixels
+  name: edge_wt_region_boundary
+  slic_compactness: 30
+  task: graph
+  task_type: classification
+  transductive: False
+  node_encoder: True
+  node_encoder_name: VOCNode
+  node_encoder_bn: False
+  edge_encoder: True
+  edge_encoder_name: VOCEdge
+  edge_encoder_bn: False
+posenc_RWSE:
+  enable: False
+  kernel:
+    times_func: range(1,33)
+  model: Linear
+  dim_pe: 28
+  raw_norm_type: BatchNorm
+train:
+  mode: custom
+  batch_size: 50
+  eval_period: 1
+  ckpt_period: 100
+  eval_smoothing_metrics: True
+model:
+  type: custom_gnn
+  loss_fun: weighted_cross_entropy
+gnn:
+  head: inductive_node
+  ffn: True
+  layers_pre_mp: 0
+  layers_mp: 14
+  layers_post_mp: 1
+  dim_inner: 85
+  layer_type: gcne
+  act: gelu
+  residual: True
+  dropout: 0.1
+optim:
+  optimizer: adamW
+  weight_decay: 0.0
+  base_lr: 0.001
+  max_epoch: 200
+  scheduler: cosine_with_warmup
+  num_warmup_epochs: 10

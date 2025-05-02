@@ -1,0 +1,54 @@
+out_dir: results
+metric_best: accuracy-SBM
+wandb:
+  use: False
+  project: PATTERN
+dataset:
+  format: PyG-GNNBenchmarkDataset
+  name: PATTERN
+  task: graph
+  task_type: classification
+  transductive: False
+  split_mode: standard
+  node_encoder: True
+  node_encoder_name: LinearNode+RWSE
+  node_encoder_bn: False
+  edge_encoder: True
+  edge_encoder_name: DummyEdge
+  edge_encoder_bn: False
+posenc_RWSE:
+  enable: True
+  kernel:
+    times_func: range(1,33)
+  model: Linear
+  raw_norm_type: BatchNorm
+train:
+  mode: custom
+  batch_size: 32
+  eval_period: 1
+  ckpt_period: 100
+model:
+  type: custom_gnn
+  loss_fun: weighted_cross_entropy
+  edge_decoding: dot
+gnn:
+  head: inductive_node
+  layers_mp: 12
+  layer_type: gcne
+  layers_pre_mp: 0
+  layers_post_mp: 3
+  dim_inner: 90
+  act: relu
+  dropout: 0.05
+  agg: mean
+  normalize_adj: False
+  ffn: True
+  residual: True
+optim:
+  clip_grad_norm: True
+  optimizer: adamW
+  weight_decay: 1e-5
+  base_lr: 0.001
+  max_epoch: 200
+  scheduler: cosine_with_warmup
+  num_warmup_epochs: 5

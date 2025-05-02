@@ -34,9 +34,22 @@ To execute training, activate the environment and run the following commands:
 
 ```bash
 conda activate tunedgnn
-sh run.sh 0 ppa 2 > ppa.txt 2>&1 &
-sh run.sh 1 code2 1 > code2.txt 2>&1 &
+
+sh run.sh 0 cifar10 2 > cifar10.txt 2>&1 &
+sh run.sh 1 cluster 2 > cluster.txt 2>&1 &
+sh run.sh 2 coco 2 > coco.txt 2>&1 &
+sh run.sh 3 code2 1 > code2.txt 2>&1 &
+sh run.sh 4 hiv 2 > hiv.txt 2>&1 &
+sh run.sh 5 mal 5 > mal.txt 2>&1 &
+sh run.sh 6 zinc 2 > zinc.txt 2>&1 &
+sh run.sh 7 pattern 4 > pattern.txt 2>&1 &
+
 sh run.sh 2 pcba 2 > pcba.txt 2>&1 &
+sh run.sh 3 peptides-func 4 > peptides-func.txt 2>&1 &
+sh run.sh 4 peptides-struct 4 > peptides-struct.txt 2>&1 &
+sh run.sh 5 voc 2 > voc.txt 2>&1 &
+sh run.sh 6 ppa 2 > ppa.txt 2>&1 &
+sh run.sh 7 mnist 2 > mnist.txt 2>&1 &
 ```
 
 Alternatively, use the following format for executing training runs:
@@ -44,8 +57,9 @@ Alternatively, use the following format for executing training runs:
 ```bash
 conda activate tunedgnn
 
+python main.py --cfg configs/gcn/peptides-func.yaml --repeat 2 seed 0
+
 python main.py --cfg configs/gatedgcn/ppa.yaml --repeat 2 seed 0 
-python main.py --cfg configs/gatedgcn/hiv.yaml --repeat 2 seed 0 
 ```
 
 ## Reference

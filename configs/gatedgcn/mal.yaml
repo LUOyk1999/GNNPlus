@@ -1,0 +1,47 @@
+out_dir: results
+metric_best: accuracy
+wandb:
+  use: False
+  project: malnet
+dataset:
+  format: PyG-MalNetTiny
+  name: LocalDegreeProfile
+  task: graph
+  task_type: classification
+  transductive: False
+  node_encoder: False
+  edge_encoder: True
+  edge_encoder_name: DummyEdge
+  edge_encoder_bn: False
+train:
+  mode: custom
+  batch_size: 16
+  eval_period: 1
+  ckpt_period: 100
+model:
+  type: custom_gnn
+  loss_fun: cross_entropy
+  edge_decoding: dot
+  graph_pooling: max
+gnn:
+  head: default
+  layers_mp: 6
+  layer_type: gatedgcn
+  layers_pre_mp: 1
+  layers_post_mp: 1
+  dim_inner: 100
+  batchnorm: True
+  act: relu
+  dropout: 0.0
+  agg: mean
+  normalize_adj: False
+  ffn: True
+  residual: True
+optim:
+  clip_grad_norm: True
+  optimizer: adamW
+  weight_decay: 1e-5
+  base_lr: 0.0005
+  max_epoch: 150
+  scheduler: cosine_with_warmup
+  num_warmup_epochs: 10
