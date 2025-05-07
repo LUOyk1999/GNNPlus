@@ -1,3 +1,14 @@
+# 🔍 Research Series: Reassessing Classic GNNs
+
+This work is part of our research series that re-evaluates the potential of classic GNNs:
+  
+| Paper | Venue | Repository |
+| - | - | - | 
+| [Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification](https://openreview.net/forum?id=xkljKdGe4E) | NeurIPS 2024 | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/tunedGNN) |
+| **[Can Classic GNNs Be Strong Baselines for Graph-Level Tasks?](https://arxiv.org/abs/2502.09263)** | ICML 2025    | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/GNNPlus) |
+| [When Dropout Meets Graph Convolutional Networks](https://openreview.net/forum?id=PwxYoMvmvy) | ICLR 2025 | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/dropout-theory) |
+| [Node Identifiers: Compact, Discrete Representations for Efficient Graph Learning](https://openreview.net/forum?id=t9lS1lX9FQ) | ICLR 2025 | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/NodeID) |
+
 # GNN+: Can Classic GNNs be Strong Baselines for Graph-level Tasks? (ICML 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.09263-b31b1b.svg)](https://arxiv.org/abs/2502.09263) 
 
