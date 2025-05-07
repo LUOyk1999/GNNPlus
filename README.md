@@ -1,13 +1,24 @@
 # 🔍 Research Series: Reassessing Classic GNNs
 
-This work is part of our research series that re-evaluates the potential of classic GNNs:
+This work is part of our **_benchmarking series_** that re-evaluates the potential of classic GNNs:
   
 | Paper | Venue | Repository |
 | - | - | - | 
 | [Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification](https://openreview.net/forum?id=xkljKdGe4E) | NeurIPS 2024 | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/tunedGNN) |
 | **[Can Classic GNNs Be Strong Baselines for Graph-Level Tasks?](https://arxiv.org/abs/2502.09263)** | ICML 2025    | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/GNNPlus) |
+
+Other recent works on classic GNNs:
+
+| Paper | Venue | Repository |
+| - | - | - | 
 | [When Dropout Meets Graph Convolutional Networks](https://openreview.net/forum?id=PwxYoMvmvy) | ICLR 2025 | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/dropout-theory) |
 | [Node Identifiers: Compact, Discrete Representations for Efficient Graph Learning](https://openreview.net/forum?id=t9lS1lX9FQ) | ICLR 2025 | [![GitHub](https://img.shields.io/badge/GitHub-Code-success?logo=github)](https://github.com/LUOyk1999/NodeID) |
+
+# Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification (NeurIPS 2024)
+
+[![OpenReview](https://img.shields.io/badge/OpenReview-xkljKdGe4E-b31b1b.svg)](https://openreview.net/forum?id=xkljKdGe4E) [![arXiv](https://img.shields.io/badge/arXiv-2406.08993-b31b1b.svg)](https://arxiv.org/pdf/2406.08993)
+
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/classic-gnns-are-strong-baselines-reassessing/node-property-prediction-on-ogbn-proteins)](https://paperswithcode.com/sota/node-property-prediction-on-ogbn-proteins?p=classic-gnns-are-strong-baselines-reassessing) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/classic-gnns-are-strong-baselines-reassessing/node-property-prediction-on-ogbn-products)](https://paperswithcode.com/sota/node-property-prediction-on-ogbn-products?p=classic-gnns-are-strong-baselines-reassessing)
 
 # GNN+: Can Classic GNNs be Strong Baselines for Graph-level Tasks? (ICML 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.09263-b31b1b.svg)](https://arxiv.org/abs/2502.09263) 
