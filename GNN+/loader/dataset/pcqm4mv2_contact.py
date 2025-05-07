@@ -15,7 +15,7 @@ from torch_geometric.graphgym.models.transform import create_link_label
 from torch_geometric.utils import to_undirected, negative_sampling
 from tqdm import tqdm
 
-from tunedGNN.utils import negate_edge_index
+from GNNPlus.utils import negate_edge_index
 
 
 def cxsmiles_to_mol_with_contact(cxsmiles):

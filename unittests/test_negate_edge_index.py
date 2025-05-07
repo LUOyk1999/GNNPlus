@@ -10,7 +10,7 @@ from torch_geometric.datasets import TUDataset
 from torch_geometric.loader import DataLoader
 from torch_geometric.utils import from_networkx, to_networkx
 
-from tunedGNN.utils import negate_edge_index
+from GNNPlus.utils import negate_edge_index
 
 
 class TestNegateEdgeIndex(unittest.TestCase):

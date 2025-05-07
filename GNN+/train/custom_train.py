@@ -12,8 +12,8 @@ from torch_geometric.graphgym.register import register_train
 from torch_geometric.graphgym.utils.epoch import is_eval_epoch, is_ckpt_epoch
 from torch_geometric.utils import to_dense_batch
 
-from tunedGNN.loss.subtoken_prediction_loss import subtoken_cross_entropy
-from tunedGNN.utils import cfg_to_dict, flatten_dict, make_wandb_name, dirichlet_energy, mean_average_distance, mean_norm
+from GNNPlus.loss.subtoken_prediction_loss import subtoken_cross_entropy
+from GNNPlus.utils import cfg_to_dict, flatten_dict, make_wandb_name, dirichlet_energy, mean_average_distance, mean_norm
 
 def train_epoch(logger, loader, model, optimizer, scheduler, batch_accumulation):
     model.train()
@@ -348,7 +348,7 @@ def log_attn_weights(loggers, loaders, model, optimizer=None, scheduler=None):
     """
     import os.path as osp
     from torch_geometric.loader.dataloader import DataLoader
-    from tunedGNN.utils import unbatch, unbatch_edge_index
+    from GNNPlus.utils import unbatch, unbatch_edge_index
 
     start_time = time.perf_counter()
 

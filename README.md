@@ -11,8 +11,8 @@ Tested with Python 3.9/3.10, PyTorch 2.2.0, and PyTorch Geometric 2.3.1.
 
 To set up the environment, run the following commands:
 ```bash
-conda create -n tunedGNN python=3.10
-conda activate tunedGNN
+conda create -n GNNPlus python=3.10
+conda activate GNNPlus
 
 pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118
 pip install torch_geometric==2.3.1
@@ -33,7 +33,7 @@ pip install wandb
 To execute training, activate the environment and run the following commands:
 
 ```bash
-conda activate tunedgnn
+conda activate GNNPlus
 
 sh run.sh 0 cifar10 2 > cifar10.txt 2>&1 &
 sh run.sh 1 cluster 2 > cluster.txt 2>&1 &
@@ -55,7 +55,7 @@ sh run.sh 7 mnist 2 > mnist.txt 2>&1 &
 Alternatively, use the following format for executing training runs:
 
 ```bash
-conda activate tunedgnn
+conda activate GNNPlus
 
 python main.py --cfg configs/gcn/peptides-func.yaml --repeat 2 seed 0
 

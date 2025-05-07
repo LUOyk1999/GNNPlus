@@ -14,15 +14,15 @@ from torch_geometric.graphgym.config import cfg
 from torch_geometric.graphgym.loader import load_pyg, load_ogb, set_dataset_attr
 from torch_geometric.graphgym.register import register_loader
 
-from tunedGNN.loader.dataset.aqsol_molecules import AQSOL
-from tunedGNN.loader.dataset.coco_superpixels import COCOSuperpixels
-from tunedGNN.loader.dataset.malnet_tiny import MalNetTiny
-from tunedGNN.loader.dataset.voc_superpixels import VOCSuperpixels
-from tunedGNN.loader.split_generator import (prepare_splits,
+from GNNPlus.loader.dataset.aqsol_molecules import AQSOL
+from GNNPlus.loader.dataset.coco_superpixels import COCOSuperpixels
+from GNNPlus.loader.dataset.malnet_tiny import MalNetTiny
+from GNNPlus.loader.dataset.voc_superpixels import VOCSuperpixels
+from GNNPlus.loader.split_generator import (prepare_splits,
                                              set_dataset_splits)
-from tunedGNN.transform.posenc_stats import compute_posenc_stats
-from tunedGNN.transform.task_preprocessing import task_specific_preprocessing
-from tunedGNN.transform.transforms import (pre_transform_in_memory,
+from GNNPlus.transform.posenc_stats import compute_posenc_stats
+from GNNPlus.transform.task_preprocessing import task_specific_preprocessing
+from GNNPlus.transform.transforms import (pre_transform_in_memory,
                                            typecast_x, concat_x_and_pos,
                                            clip_graphs_to_size)
 
@@ -341,7 +341,7 @@ def preformat_OGB_Graph(dataset_dir, name):
             return data
         dataset.transform = add_zeros
     elif name == 'ogbg-code2':
-        from tunedGNN.loader.ogbg_code2_utils import idx2vocab, \
+        from GNNPlus.loader.ogbg_code2_utils import idx2vocab, \
             get_vocab_mapping, augment_edge, encode_y_to_arr
         num_vocab = 5000  # The number of vocabulary used for sequence prediction
         max_seq_len = 5  # The maximum sequence length to predict
@@ -470,7 +470,7 @@ def preformat_PCQM4Mv2Contact(dataset_dir, name):
     """
     try:
         # Load locally to avoid RDKit dependency until necessary
-        from tunedGNN.loader.dataset.pcqm4mv2_contact import \
+        from GNNPlus.loader.dataset.pcqm4mv2_contact import \
             PygPCQM4Mv2ContactDataset, \
             structured_neg_sampling_transform
     except Exception as e:
@@ -504,9 +504,9 @@ def preformat_Peptides(dataset_dir, name):
     """
     try:
         # Load locally to avoid RDKit dependency until necessary.
-        from tunedGNN.loader.dataset.peptides_functional import \
+        from GNNPlus.loader.dataset.peptides_functional import \
             PeptidesFunctionalDataset
-        from tunedGNN.loader.dataset.peptides_structural import \
+        from GNNPlus.loader.dataset.peptides_structural import \
             PeptidesStructuralDataset
     except Exception as e:
         logging.error('ERROR: Failed to import Peptides dataset class, '

@@ -7,7 +7,7 @@ from numpy.linalg import eigvals
 from torch_geometric.utils import (get_laplacian, to_scipy_sparse_matrix,
                                    to_undirected, to_dense_adj, scatter)
 from torch_geometric.utils.num_nodes import maybe_num_nodes
-from tunedGNN.encoder.graphormer_encoder import graphormer_pre_processing
+from GNNPlus.encoder.graphormer_encoder import graphormer_pre_processing
 
 
 def compute_posenc_stats(data, pe_types, is_undirected, cfg):

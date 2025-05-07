@@ -2,8 +2,8 @@ import datetime
 import torch
 import logging
 
-import tunedGNN  # noqa, register custom modules
-from tunedGNN.optimizer.extra_optimizers import ExtendedSchedulerConfig
+import GNNPlus  # noqa, register custom modules
+from GNNPlus.optimizer.extra_optimizers import ExtendedSchedulerConfig
 
 from torch_geometric.graphgym.cmd_args import parse_args
 from torch_geometric.graphgym.config import (cfg, set_cfg, load_cfg)
@@ -18,9 +18,9 @@ from torch_geometric.graphgym.utils.device import auto_select_device
 from torch_geometric.graphgym.register import train_dict
 from torch_geometric import seed_everything
 
-from tunedGNN.finetuning import load_pretrained_model_cfg, \
+from GNNPlus.finetuning import load_pretrained_model_cfg, \
     init_model_from_pretrained
-from tunedGNN.logger import create_logger
+from GNNPlus.logger import create_logger
 
 
 torch.backends.cuda.matmul.allow_tf32 = True  # Default False in PyTorch 1.12+

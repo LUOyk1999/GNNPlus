@@ -6,7 +6,7 @@ import torch
 from torch_geometric.utils import to_scipy_sparse_matrix, get_laplacian, \
     from_networkx
 
-from tunedGNN.transform.posenc_stats import (eigvec_normalizer,
+from GNNPlus.transform.posenc_stats import (eigvec_normalizer,
                                              get_heat_kernels,
                                              get_heat_kernels_diag,
                                              get_rw_landing_probs,

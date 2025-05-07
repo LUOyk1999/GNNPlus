@@ -5,8 +5,8 @@ from torch_geometric.graphgym.config import cfg
 from torch_geometric.graphgym.models.gnn import FeatureEncoder, GNNPreMP
 from torch_geometric.graphgym.register import register_network
 
-from tunedGNN.layer.gatedgcn_layer import GatedGCNLayer
-from tunedGNN.layer.gine_conv_layer import GINEConvLayer
+from GNNPlus.layer.gatedgcn_layer import GatedGCNLayer
+from GNNPlus.layer.gine_conv_layer import GINEConvLayer
 
 @register_network('custom_gnn')
 class CustomGNN(torch.nn.Module):
@@ -46,10 +46,10 @@ class CustomGNN(torch.nn.Module):
         elif model_type == 'gine':
             return GINEConvLayer
         elif model_type == 'gcn':
-            from tunedGNN.layer.gcn_conv_layer import GCNConvLayer
+            from GNNPlus.layer.gcn_conv_layer import GCNConvLayer
             return GCNConvLayer
         elif model_type == 'gcne':
-            from tunedGNN.layer.gcn_conv_layer_e import GCNConvLayer
+            from GNNPlus.layer.gcn_conv_layer_e import GCNConvLayer
             return GCNConvLayer
         else:
             raise ValueError("Model {} unavailable".format(model_type))

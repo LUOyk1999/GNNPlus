@@ -12,7 +12,7 @@ except Exception:
 
 setup(
 	# Name of the package
-	name='tunedGNN',
+	name='GNNPlus',
 	# Packages to include into the distribution
 	packages=find_packages('.'),
 	# Start with a small number and increase it with

@@ -14,8 +14,8 @@ from torch_geometric.graphgym.logger import infer_task, Logger
 from torch_geometric.graphgym.utils.io import dict_to_json, dict_to_tb
 from torchmetrics.functional import auroc
 
-import tunedGNN.metrics_ogb as metrics_ogb
-from tunedGNN.metric_wrapper import MetricWrapper
+import GNNPlus.metrics_ogb as metrics_ogb
+from GNNPlus.metric_wrapper import MetricWrapper
 
 
 def accuracy_SBM(targets, pred_int):
@@ -207,7 +207,7 @@ class CustomLogger(Logger):
 
             # Decode the predicted sequence tokens, so we don't need to store
             # the logits that take significant memory.
-            from tunedGNN.loader.ogbg_code2_utils import idx2vocab, \
+            from GNNPlus.loader.ogbg_code2_utils import idx2vocab, \
                 decode_arr_to_seq
             arr_to_seq = lambda arr: decode_arr_to_seq(arr, idx2vocab)
             mat = []
