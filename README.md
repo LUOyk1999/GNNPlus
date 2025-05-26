@@ -5,11 +5,6 @@
 | [Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification](https://github.com/LUOyk1999/tunedGNN) (NeurIPS 2024) | [Link](https://openreview.net/forum?id=xkljKdGe4E) |
 | **_[GNN+: Can Classic GNNs Be Strong Baselines for Graph-Level Tasks?](https://github.com/LUOyk1999/GNNPlus) (ICML 2025)_** | [Link](https://arxiv.org/abs/2502.09263) | 
 
-| Follow-up Studies | Paper |
-| - | - |
-| [When Dropout Meets Graph Convolutional Networks](https://github.com/LUOyk1999/dropout-theory) (ICLR 2025)  | [Link](https://openreview.net/forum?id=PwxYoMvmvy) | 
-| [Node Identifiers: Compact, Discrete Representations for Efficient Graph Learning](https://github.com/LUOyk1999/NodeID) (ICLR 2025) | [Link](https://openreview.net/forum?id=t9lS1lX9FQ) | 
-
 # GNN+: Can Classic GNNs Be Strong Baselines for Graph-level Tasks? (ICML 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.09263-b31b1b.svg)](https://arxiv.org/abs/2502.09263) 
 
