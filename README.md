@@ -3,12 +3,14 @@
 | Benchmarking Series: Reassessing Classic GNNs | Paper |
 | - | - |
 | [Classic GNNs are Strong Baselines: Reassessing GNNs for Node Classification](https://github.com/LUOyk1999/tunedGNN) (NeurIPS 2024) | [Link](https://openreview.net/forum?id=xkljKdGe4E) |
-| **_[Can Classic GNNs Be Strong Baselines for Graph-Level Tasks?](https://github.com/LUOyk1999/GNNPlus) (ICML 2025)_** | [Link](https://arxiv.org/abs/2502.09263) | 
+| **_[GNN+: Can Classic GNNs Be Strong Baselines for Graph-Level Tasks?](https://github.com/LUOyk1999/GNNPlus) (ICML 2025)_** | [Link](https://arxiv.org/abs/2502.09263) |
 
 # GNN+: Can Classic GNNs Be Strong Baselines for Graph-level Tasks? (ICML 2025)
 [![arXiv](https://img.shields.io/badge/arXiv-2502.09263-b31b1b.svg)](https://arxiv.org/abs/2502.09263) 
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unlocking-the-potential-of-classic-gnns-for/graph-property-prediction-on-ogbg-ppa)](https://paperswithcode.com/sota/graph-property-prediction-on-ogbg-ppa?p=unlocking-the-potential-of-classic-gnns-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unlocking-the-potential-of-classic-gnns-for/graph-classification-on-malnet-tiny)](https://paperswithcode.com/sota/graph-classification-on-malnet-tiny?p=unlocking-the-potential-of-classic-gnns-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unlocking-the-potential-of-classic-gnns-for/graph-classification-on-cifar10-100k)](https://paperswithcode.com/sota/graph-classification-on-cifar10-100k?p=unlocking-the-potential-of-classic-gnns-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unlocking-the-potential-of-classic-gnns-for/graph-regression-on-peptides-struct)](https://paperswithcode.com/sota/graph-regression-on-peptides-struct?p=unlocking-the-potential-of-classic-gnns-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unlocking-the-potential-of-classic-gnns-for/node-classification-on-cluster)](https://paperswithcode.com/sota/node-classification-on-cluster?p=unlocking-the-potential-of-classic-gnns-for) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/unlocking-the-potential-of-classic-gnns-for/node-classification-on-coco-sp)](https://paperswithcode.com/sota/node-classification-on-coco-sp?p=unlocking-the-potential-of-classic-gnns-for)
+
+![gnnplus](gnnplus.png)
 
 Based on the GPS codebase: https://github.com/rampasek/GraphGPS
 
