@@ -74,10 +74,12 @@ python main.py --cfg configs/gatedgcn/ppa.yaml --repeat 2 seed 0
 If you find our codes useful, please consider citing our work
 
 ```
-@article{luo2025unlocking,
-  title={Unlocking the Potential of Classic GNNs for Graph-level Tasks: Simple Architectures Meet Excellence},
-  author={Luo, Yuankai and Shi, Lei and Wu, Xiao-Ming},
-  journal={arXiv preprint arXiv:2502.09263},
-  year={2025}
+@inproceedings{
+luo2025can,
+title={Can Classic {GNN}s Be Strong Baselines for Graph-level Tasks? Simple Architectures Meet Excellence},
+author={Yuankai Luo and Lei Shi and Xiao-Ming Wu},
+booktitle={Forty-second International Conference on Machine Learning},
+year={2025},
+url={https://openreview.net/forum?id=ZH7YgIZ3DF}
 }
 ```
